@@ -9,25 +9,26 @@ class EmailAddressParser
   @@all = []
 
    def initialize (email_addresses)
-     binding.pry
+     
 
 
       @email_addresses = email_addresses
-     @@all << self
+    #  @@all << self
 
    end
-   def self.create
-     @@all <<self.new
-
-   end
-
-   def self.all?
-     @@all
-   end
+  #  def self.create
+  #    @@all <<self.new
+   # 
+  #  end
+   # 
+  #  def self.all?
+  #    @@all
+  #  end
 
   def parse
     # email_addresses = self.new
    parses = email_addresses
+   binding.pry
    @@all << parses
 
   end
