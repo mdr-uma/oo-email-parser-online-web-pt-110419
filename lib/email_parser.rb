@@ -6,7 +6,6 @@ require 'pry'
 # or whitespace (' ').
 class EmailAddressParser
   attr_accessor :email_addresses
-  @@all = []
 
    def initialize (email_addresses)
 
@@ -26,10 +25,9 @@ class EmailAddressParser
   #  end
 
   def parse
-    # email_addresses = self.new
-   parses = email_addresses
-  #  @@all << parses
-   parses.split(%r{,\s*})
+    # email_addresses.split(%r{,\s*})
+    email_addresses.split.collect {|add| add.split(',')}
+    .flatten.uniq
   #  binding.pry
 
 
