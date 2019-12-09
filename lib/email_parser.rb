@@ -29,7 +29,7 @@ class EmailAddressParser
     # email_addresses = self.new
    parses = email_addresses
   #  @@all << parses
-   parses.split(',')
+   parses.split(%r{,\s*})
    binding.pry
 
 
