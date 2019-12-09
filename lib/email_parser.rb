@@ -9,6 +9,8 @@ class EmailAddressParser
   @@all = []
 
    def initialize (email_addresses)
+     binding.pry
+
 
       @email_addresses = email_addresses
      @@all << self
@@ -26,7 +28,6 @@ class EmailAddressParser
   def parse
     # email_addresses = self.new
    parses = email_addresses
-   binding.pry
    @@all << parses
 
   end
