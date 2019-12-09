@@ -9,7 +9,7 @@ class EmailAddressParser
    def initialize(email_addresses)
 
      @email_addresses = email_addresses
-     @@all << self
+     @@all << self.new
 
    end
 
