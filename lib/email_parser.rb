@@ -13,7 +13,7 @@ class EmailAddressParser
 
   def parse
     email_addresses = self.new
-     EmailAddressParser.new(email_addresses)
+     parser = EmailAddressParser.new(email_addresses)
 
 
   end
