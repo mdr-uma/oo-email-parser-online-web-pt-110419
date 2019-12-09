@@ -30,7 +30,7 @@ class EmailAddressParser
    parses = email_addresses
    binding.pry
    @@all << parses
-   @@all.split(" ")
+   parses.split(" ")
 
   end
 end
