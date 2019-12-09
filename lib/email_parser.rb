@@ -28,7 +28,7 @@ class EmailAddressParser
   def parse
     # email_addresses = self.new
    parses = email_addresses
-    binding.pry
+    # binding.pry
   #  @@all << parses
    parses.split(',')
 
