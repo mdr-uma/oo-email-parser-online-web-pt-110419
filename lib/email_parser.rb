@@ -8,21 +8,10 @@ class EmailAddressParser
   attr_accessor :email_addresses
 
    def initialize (email_addresses)
-
-
-
       @email_addresses = email_addresses
-    #  @@all << self
 
    end
-  #  def self.create
-  #    @@all <<self.new
-   #
-  #  end
-   #
-  #  def self.all?
-  #    @@all
-  #  end
+
 
   def parse
     # email_addresses.split(%r{,\s*})
